@@ -1,0 +1,25 @@
+* This is a text docs
+
+//1.Diff bw structure and union
+ >Both are user defined data types, group of elements with diff/same dt. 
+ >To define structure dt we use struct keyword ,likewise union keyword for union data type.
+ >struct - separate memory allocation , union - single memory allocation with highest data size.
+
+//2.Typedef 
+ >To rename the data type
+ >Gives better readibility
+ >Reduce no of lines
+
+//3.Structure padding
+ >Speedup the CPU processing , memory consumption high
+ >By default structure padding is enabled by compiler
+ 
+ -To avoid structure padding
+ > #pragma pack(1) 
+ >speed reduces , memory consumes less
+
+ //4.Storage classes
+  >1.auto/local - RAM , Garbage value , Within function/block
+  >2.register - Register in CPU , GV , within func/block
+  >3.static - 0 , Data segment ,end of prog
+  >4.extern - 0 , RAM , end of prog
